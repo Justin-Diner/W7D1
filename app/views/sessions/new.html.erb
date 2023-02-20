@@ -1,5 +1,16 @@
-<h1>Please Sign Up Here!</h1>
+<h1>Please Log In Here!</h1>
+<form action="<%= session_url %>" method="POST"> 
+
 <label id="username" name="user[:username]" value="">
-Username 
+<input type="text" value="">
+Username
 </label>
 
+<label id="password" name="user[:password]" value="">
+<input type="password" value="">
+Password
+</label>
+
+<input type="submit" value="Create Account">
+
+</form>
